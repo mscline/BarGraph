@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		517E471E1B2FD90300D7FF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E471D1B2FD90300D7FF7C /* AppDelegate.swift */; };
+		517E47281B2FD90300D7FF7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517E47271B2FD90300D7FF7C /* Images.xcassets */; };
+		517E472B1B2FD90300D7FF7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517E47291B2FD90300D7FF7C /* LaunchScreen.xib */; };
+		517E47451B2FD97300D7FF7C /* BarGraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47411B2FD97300D7FF7C /* BarGraphTest.swift */; };
+		517E47461B2FD97300D7FF7C /* BarGraphContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47421B2FD97300D7FF7C /* BarGraphContainerTests.swift */; };
+		517E47471B2FD97300D7FF7C /* YValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47431B2FD97300D7FF7C /* YValuesTests.swift */; };
+		517E47501B2FDA4500D7FF7C /* BarGraphFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E474F1B2FDA4500D7FF7C /* BarGraphFacade.swift */; };
+		517E47551B2FDA5500D7FF7C /* BarGraphContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47511B2FDA5500D7FF7C /* BarGraphContainer.swift */; };
+		517E47561B2FDA5500D7FF7C /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47521B2FDA5500D7FF7C /* BarGraph.swift */; };
+		517E47571B2FDA5500D7FF7C /* ColumnHeadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47531B2FDA5500D7FF7C /* ColumnHeadings.swift */; };
+		517E47581B2FDA5500D7FF7C /* YValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47541B2FDA5500D7FF7C /* YValues.swift */; };
+		517E475A1B2FDA5F00D7FF7C /* BarGraphDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47591B2FDA5F00D7FF7C /* BarGraphDataItem.swift */; };
+		517E475C1B2FDA6E00D7FF7C /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475B1B2FDA6E00D7FF7C /* TextFormatter.swift */; };
+		517E47611B2FDA9700D7FF7C /* BarGraphColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475E1B2FDA9700D7FF7C /* BarGraphColumnCell.swift */; };
+		517E47621B2FDA9700D7FF7C /* YAxisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475F1B2FDA9700D7FF7C /* YAxisCell.swift */; };
+		517E47631B2FDA9700D7FF7C /* ColumnTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47601B2FDA9700D7FF7C /* ColumnTitleCell.swift */; };
+		51F5F88A1B2FDD750014979A /* BarGraphFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E474F1B2FDA4500D7FF7C /* BarGraphFacade.swift */; };
+		51F5F88B1B2FDD7A0014979A /* BarGraphContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47511B2FDA5500D7FF7C /* BarGraphContainer.swift */; };
+		51F5F88C1B2FDD7C0014979A /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47521B2FDA5500D7FF7C /* BarGraph.swift */; };
+		51F5F88D1B2FDD7F0014979A /* ColumnHeadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47531B2FDA5500D7FF7C /* ColumnHeadings.swift */; };
+		51F5F88E1B2FDD830014979A /* YValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47541B2FDA5500D7FF7C /* YValues.swift */; };
+		51F5F88F1B2FDD930014979A /* BarGraphColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475E1B2FDA9700D7FF7C /* BarGraphColumnCell.swift */; };
+		51F5F8901B2FDD960014979A /* YAxisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475F1B2FDA9700D7FF7C /* YAxisCell.swift */; };
+		51F5F8911B2FDD990014979A /* ColumnTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47601B2FDA9700D7FF7C /* ColumnTitleCell.swift */; };
+		51F5F8921B2FDD9E0014979A /* BarGraphDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E47591B2FDA5F00D7FF7C /* BarGraphDataItem.swift */; };
+		51F5F8931B2FDDA30014979A /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E475B1B2FDA6E00D7FF7C /* TextFormatter.swift */; };
+		51F5F89C1B30A6C20014979A /* InteractiveBarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5F89B1B30A6C20014979A /* InteractiveBarGraph.swift */; };
+		51F5F89D1B30A72A0014979A /* InteractiveBarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5F89B1B30A6C20014979A /* InteractiveBarGraph.swift */; };
+		51F5F8A21B30F2930014979A /* PopUpBubbleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5F8A11B30F2930014979A /* PopUpBubbleLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		517E47311B2FD90300D7FF7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517E47101B2FD90300D7FF7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 517E47171B2FD90300D7FF7C;
+			remoteInfo = LifespanPlanning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		517E47181B2FD90300D7FF7C /* LifespanPlanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifespanPlanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		517E471C1B2FD90300D7FF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517E471D1B2FD90300D7FF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		517E47271B2FD90300D7FF7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		517E472A1B2FD90300D7FF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		517E47301B2FD90300D7FF7C /* LifespanPlanningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifespanPlanningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		517E47351B2FD90300D7FF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517E47411B2FD97300D7FF7C /* BarGraphTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphTest.swift; sourceTree = "<group>"; };
+		517E47421B2FD97300D7FF7C /* BarGraphContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphContainerTests.swift; sourceTree = "<group>"; };
+		517E47431B2FD97300D7FF7C /* YValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YValuesTests.swift; sourceTree = "<group>"; };
+		517E474F1B2FDA4500D7FF7C /* BarGraphFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphFacade.swift; sourceTree = "<group>"; };
+		517E47511B2FDA5500D7FF7C /* BarGraphContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphContainer.swift; sourceTree = "<group>"; };
+		517E47521B2FDA5500D7FF7C /* BarGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
+		517E47531B2FDA5500D7FF7C /* ColumnHeadings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnHeadings.swift; sourceTree = "<group>"; };
+		517E47541B2FDA5500D7FF7C /* YValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YValues.swift; sourceTree = "<group>"; };
+		517E47591B2FDA5F00D7FF7C /* BarGraphDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphDataItem.swift; sourceTree = "<group>"; };
+		517E475B1B2FDA6E00D7FF7C /* TextFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		517E475E1B2FDA9700D7FF7C /* BarGraphColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphColumnCell.swift; sourceTree = "<group>"; };
+		517E475F1B2FDA9700D7FF7C /* YAxisCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAxisCell.swift; sourceTree = "<group>"; };
+		517E47601B2FDA9700D7FF7C /* ColumnTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnTitleCell.swift; sourceTree = "<group>"; };
+		51F5F89B1B30A6C20014979A /* InteractiveBarGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveBarGraph.swift; sourceTree = "<group>"; };
+		51F5F8A11B30F2930014979A /* PopUpBubbleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpBubbleLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		517E47151B2FD90300D7FF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517E472D1B2FD90300D7FF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		517E470F1B2FD90300D7FF7C = {
+			isa = PBXGroup;
+			children = (
+				517E471A1B2FD90300D7FF7C /* LifespanPlanning */,
+				517E47331B2FD90300D7FF7C /* LifespanPlanningTests */,
+				517E47191B2FD90300D7FF7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		517E47191B2FD90300D7FF7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				517E47181B2FD90300D7FF7C /* LifespanPlanning.app */,
+				517E47301B2FD90300D7FF7C /* LifespanPlanningTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		517E471A1B2FD90300D7FF7C /* LifespanPlanning */ = {
+			isa = PBXGroup;
+			children = (
+				517E47481B2FD98200D7FF7C /* BarGraph */,
+				51F5F8A01B30F2350014979A /* Utility View */,
+				517E474E1B2FDA0800D7FF7C /* Other */,
+			);
+			path = LifespanPlanning;
+			sourceTree = "<group>";
+		};
+		517E471B1B2FD90300D7FF7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				517E471C1B2FD90300D7FF7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517E47331B2FD90300D7FF7C /* LifespanPlanningTests */ = {
+			isa = PBXGroup;
+			children = (
+				51F5F8941B2FDE750014979A /* BarGraphTests */,
+				517E47341B2FD90300D7FF7C /* Supporting Files */,
+			);
+			path = LifespanPlanningTests;
+			sourceTree = "<group>";
+		};
+		517E47341B2FD90300D7FF7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				517E47351B2FD90300D7FF7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517E47481B2FD98200D7FF7C /* BarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				517E474F1B2FDA4500D7FF7C /* BarGraphFacade.swift */,
+				517E47491B2FD99000D7FF7C /* controllers */,
+				517E474B1B2FD9A700D7FF7C /* view */,
+				517E474A1B2FD99D00D7FF7C /* model */,
+				517E474D1B2FD9BD00D7FF7C /* utilities */,
+			);
+			name = BarGraph;
+			sourceTree = "<group>";
+		};
+		517E47491B2FD99000D7FF7C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51F5F89B1B30A6C20014979A /* InteractiveBarGraph.swift */,
+				517E47511B2FDA5500D7FF7C /* BarGraphContainer.swift */,
+				517E47521B2FDA5500D7FF7C /* BarGraph.swift */,
+				517E47531B2FDA5500D7FF7C /* ColumnHeadings.swift */,
+				517E47541B2FDA5500D7FF7C /* YValues.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		517E474A1B2FD99D00D7FF7C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				517E47591B2FDA5F00D7FF7C /* BarGraphDataItem.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		517E474B1B2FD9A700D7FF7C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				517E475D1B2FDA7800D7FF7C /* CollectionViewCells */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		517E474D1B2FD9BD00D7FF7C /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				517E475B1B2FDA6E00D7FF7C /* TextFormatter.swift */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		517E474E1B2FDA0800D7FF7C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				517E471D1B2FD90300D7FF7C /* AppDelegate.swift */,
+				517E47271B2FD90300D7FF7C /* Images.xcassets */,
+				517E47291B2FD90300D7FF7C /* LaunchScreen.xib */,
+				517E471B1B2FD90300D7FF7C /* Supporting Files */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		517E475D1B2FDA7800D7FF7C /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				517E475E1B2FDA9700D7FF7C /* BarGraphColumnCell.swift */,
+				517E475F1B2FDA9700D7FF7C /* YAxisCell.swift */,
+				517E47601B2FDA9700D7FF7C /* ColumnTitleCell.swift */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		51F5F8941B2FDE750014979A /* BarGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				517E47421B2FD97300D7FF7C /* BarGraphContainerTests.swift */,
+				517E47411B2FD97300D7FF7C /* BarGraphTest.swift */,
+				517E47431B2FD97300D7FF7C /* YValuesTests.swift */,
+			);
+			name = BarGraphTests;
+			sourceTree = "<group>";
+		};
+		51F5F8A01B30F2350014979A /* Utility View */ = {
+			isa = PBXGroup;
+			children = (
+				51F5F8A11B30F2930014979A /* PopUpBubbleLabel.swift */,
+			);
+			name = "Utility View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		517E47171B2FD90300D7FF7C /* LifespanPlanning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517E473A1B2FD90300D7FF7C /* Build configuration list for PBXNativeTarget "LifespanPlanning" */;
+			buildPhases = (
+				517E47141B2FD90300D7FF7C /* Sources */,
+				517E47151B2FD90300D7FF7C /* Frameworks */,
+				517E47161B2FD90300D7FF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifespanPlanning;
+			productName = LifespanPlanning;
+			productReference = 517E47181B2FD90300D7FF7C /* LifespanPlanning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		517E472F1B2FD90300D7FF7C /* LifespanPlanningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517E473D1B2FD90300D7FF7C /* Build configuration list for PBXNativeTarget "LifespanPlanningTests" */;
+			buildPhases = (
+				517E472C1B2FD90300D7FF7C /* Sources */,
+				517E472D1B2FD90300D7FF7C /* Frameworks */,
+				517E472E1B2FD90300D7FF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517E47321B2FD90300D7FF7C /* PBXTargetDependency */,
+			);
+			name = LifespanPlanningTests;
+			productName = LifespanPlanningTests;
+			productReference = 517E47301B2FD90300D7FF7C /* LifespanPlanningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		517E47101B2FD90300D7FF7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Monsoon Co";
+				TargetAttributes = {
+					517E47171B2FD90300D7FF7C = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					517E472F1B2FD90300D7FF7C = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 517E47171B2FD90300D7FF7C;
+					};
+				};
+			};
+			buildConfigurationList = 517E47131B2FD90300D7FF7C /* Build configuration list for PBXProject "LifespanPlanning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 517E470F1B2FD90300D7FF7C;
+			productRefGroup = 517E47191B2FD90300D7FF7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				517E47171B2FD90300D7FF7C /* LifespanPlanning */,
+				517E472F1B2FD90300D7FF7C /* LifespanPlanningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		517E47161B2FD90300D7FF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517E472B1B2FD90300D7FF7C /* LaunchScreen.xib in Resources */,
+				517E47281B2FD90300D7FF7C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517E472E1B2FD90300D7FF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		517E47141B2FD90300D7FF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517E47621B2FDA9700D7FF7C /* YAxisCell.swift in Sources */,
+				517E47561B2FDA5500D7FF7C /* BarGraph.swift in Sources */,
+				517E47581B2FDA5500D7FF7C /* YValues.swift in Sources */,
+				517E47551B2FDA5500D7FF7C /* BarGraphContainer.swift in Sources */,
+				51F5F8A21B30F2930014979A /* PopUpBubbleLabel.swift in Sources */,
+				517E47631B2FDA9700D7FF7C /* ColumnTitleCell.swift in Sources */,
+				51F5F89C1B30A6C20014979A /* InteractiveBarGraph.swift in Sources */,
+				517E475C1B2FDA6E00D7FF7C /* TextFormatter.swift in Sources */,
+				517E47571B2FDA5500D7FF7C /* ColumnHeadings.swift in Sources */,
+				517E47501B2FDA4500D7FF7C /* BarGraphFacade.swift in Sources */,
+				517E471E1B2FD90300D7FF7C /* AppDelegate.swift in Sources */,
+				517E475A1B2FDA5F00D7FF7C /* BarGraphDataItem.swift in Sources */,
+				517E47611B2FDA9700D7FF7C /* BarGraphColumnCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517E472C1B2FD90300D7FF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F5F8931B2FDDA30014979A /* TextFormatter.swift in Sources */,
+				51F5F8901B2FDD960014979A /* YAxisCell.swift in Sources */,
+				51F5F88C1B2FDD7C0014979A /* BarGraph.swift in Sources */,
+				51F5F88A1B2FDD750014979A /* BarGraphFacade.swift in Sources */,
+				51F5F88B1B2FDD7A0014979A /* BarGraphContainer.swift in Sources */,
+				51F5F8911B2FDD990014979A /* ColumnTitleCell.swift in Sources */,
+				51F5F88E1B2FDD830014979A /* YValues.swift in Sources */,
+				517E47461B2FD97300D7FF7C /* BarGraphContainerTests.swift in Sources */,
+				51F5F88D1B2FDD7F0014979A /* ColumnHeadings.swift in Sources */,
+				517E47451B2FD97300D7FF7C /* BarGraphTest.swift in Sources */,
+				517E47471B2FD97300D7FF7C /* YValuesTests.swift in Sources */,
+				51F5F88F1B2FDD930014979A /* BarGraphColumnCell.swift in Sources */,
+				51F5F89D1B30A72A0014979A /* InteractiveBarGraph.swift in Sources */,
+				51F5F8921B2FDD9E0014979A /* BarGraphDataItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		517E47321B2FD90300D7FF7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 517E47171B2FD90300D7FF7C /* LifespanPlanning */;
+			targetProxy = 517E47311B2FD90300D7FF7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		517E47291B2FD90300D7FF7C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517E472A1B2FD90300D7FF7C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		517E47381B2FD90300D7FF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		517E47391B2FD90300D7FF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		517E473B1B2FD90300D7FF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LifespanPlanning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		517E473C1B2FD90300D7FF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LifespanPlanning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		517E473E1B2FD90300D7FF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LifespanPlanningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifespanPlanning.app/LifespanPlanning";
+			};
+			name = Debug;
+		};
+		517E473F1B2FD90300D7FF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LifespanPlanningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifespanPlanning.app/LifespanPlanning";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		517E47131B2FD90300D7FF7C /* Build configuration list for PBXProject "LifespanPlanning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517E47381B2FD90300D7FF7C /* Debug */,
+				517E47391B2FD90300D7FF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517E473A1B2FD90300D7FF7C /* Build configuration list for PBXNativeTarget "LifespanPlanning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517E473B1B2FD90300D7FF7C /* Debug */,
+				517E473C1B2FD90300D7FF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517E473D1B2FD90300D7FF7C /* Build configuration list for PBXNativeTarget "LifespanPlanningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517E473E1B2FD90300D7FF7C /* Debug */,
+				517E473F1B2FD90300D7FF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 517E47101B2FD90300D7FF7C /* Project object */;
+}
